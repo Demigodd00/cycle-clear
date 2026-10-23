@@ -1,11 +1,11 @@
 # Readiness gates
 
-Status at local build; do not use this as a Portal submission claim.
+Status after the StudioNet demo. These are evidence gates, not a steward acceptance or points guarantee.
 
 | Gate | Status | Evidence / gap |
 | --- | --- | --- |
-| Technical | FAIL | GenVM linter and direct tests pass, but there is no StudioNet deployment, live consensus replay, or Explorer transaction proof yet. |
+| Technical | PASS | GenVM lint and 18 direct tests pass. The runner probe and CycleClear deployment finalized with leader `SUCCESS`; the live three-edge positive cycle cleared, a duplicate join failed without changing state, and a conflicting instruction-injection edge returned `NO_MATCH` before rejection. |
 | Distinctiveness | PASS | At design level, three-owner reservations, three edge findings, and atomic reassignment differ from WaiverClock/AgentPermit/ToolBond mechanisms; no steward determination is promised. |
-| Evidence | FAIL | No public, logged-out source link; no deployed-source match; no Explorer contract or positive/negative demo transactions. |
+| Evidence | PASS | Public repo and full-commit source/evidence URLs, deployed-source byte match, 21 finalized CycleClear transactions with execution results/votes, final on-chain read-backs, and a read-only proof verifier are recorded in `deploy/proof.json`. |
 
-Before calling this submission-ready: push the exact source to a dedicated repository; obtain user approval before changing repository visibility or deploying; deploy from the pushed commit; verify deployed source bytes against the Git blob; run a three-owner positive cycle and at least one tampered or mismatched negative cycle on StudioNet; record Explorer links, transaction IDs, evidence commit URLs, timestamps, and known limitations. A local test is never a substitute for these proofs. Portal submission remains the user's action.
+The source and evidence are synthetic claim descriptions, not proof of delivered goods, copyright, or payment. A reviewer may judge distinctiveness or utility differently. Portal submission remains the user's action; do not treat these gates as acceptance.

@@ -1,0 +1,747 @@
+{
+  "chain_id": 61999,
+  "completed_at": "2026-10-23T15:31:31.274322+00:00",
+  "contract_address": "0xaBf2790581cA42cD296C3CE7Ab1Db195BBA2d744",
+  "evidence": {
+    "evidence/demo/injection-offer.txt": {
+      "bytes": 399,
+      "sha256": "3ef95278b93422121ddf258c73e586e4b08bfe0fa73b0d5c88728cf7e2ea4b44",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/injection-offer.txt"
+    },
+    "evidence/demo/offer-a.txt": {
+      "bytes": 339,
+      "sha256": "a54698063f64dadb463853705795c78011e4a4e2795dbfb9196de7c8a81c2562",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-a.txt"
+    },
+    "evidence/demo/offer-b.txt": {
+      "bytes": 307,
+      "sha256": "9a94e9aef4659cf8bdcf18bf6d3c8ec1c70d80c2204c12d784d53a4ee3ab4b07",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-b.txt"
+    },
+    "evidence/demo/offer-c.txt": {
+      "bytes": 283,
+      "sha256": "d1cdd0df9c80467a7e205650b43d7a76cefa819dd4595a282c9ca59a796a0a82",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-c.txt"
+    },
+    "evidence/demo/want-a.txt": {
+      "bytes": 271,
+      "sha256": "dfb49d3c8636ce0563a8a23cde45f673fb5d991f8f67787a86b967f8da40a79a",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-a.txt"
+    },
+    "evidence/demo/want-b.txt": {
+      "bytes": 272,
+      "sha256": "aeec24762068be6bc1810bae2f5d57a971b652908075fa79b2651ba04190fa99",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-b.txt"
+    },
+    "evidence/demo/want-c.txt": {
+      "bytes": 272,
+      "sha256": "1a324c65441a20e0aa6272b5e101593a6d7b26f893fbcb7770c3fdd5da192a0a",
+      "url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-c.txt"
+    }
+  },
+  "explorer": "https://explorer-studio.genlayer.com/address/0xaBf2790581cA42cD296C3CE7Ab1Db195BBA2d744",
+  "limitations": "Synthetic claim terms; no proof of off-chain delivery, copyright, or payment.",
+  "network": "studionet",
+  "participants": [
+    "0x723eFc4ee500A90D469AaC0fF6052f5395A5F5D1",
+    "0x979191b9Dd54eF9D09B43F4157A28aeAC5c87AE1",
+    "0x82f7128CF335648c89a0d9509d27C214c285E594"
+  ],
+  "probe": {
+    "contract_address": "0x501D9869b69657866BB9274742D9F8E1a623440d",
+    "network": "studionet",
+    "readback": 1,
+    "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+    "transactions": {
+      "bump": {
+        "expected_success": true,
+        "hash": "0x9d460473f389ee608e645312291047f0bf26847a2c40a74a04da531cda1ba9dc",
+        "receipt": {
+          "consensus": "MAJORITY_AGREE",
+          "execution": "SUCCESS",
+          "status": "FINALIZED",
+          "votes": {
+            "agree": 5,
+            "disagree": 0,
+            "total": 5
+          }
+        }
+      },
+      "deploy": {
+        "expected_success": true,
+        "hash": "0x076916a3cb95e5854b05f23e08931e4b8c1ca8140732dde54c38bef9188fb210",
+        "receipt": {
+          "consensus": "MAJORITY_AGREE",
+          "execution": "SUCCESS",
+          "status": "FINALIZED",
+          "votes": {
+            "agree": 5,
+            "disagree": 0,
+            "total": 5
+          }
+        }
+      }
+    }
+  },
+  "readbacks": {
+    "after_duplicate_join": {
+      "claim_ids": [
+        1,
+        2,
+        3
+      ],
+      "closed_at": 0,
+      "created_at": 1792768685,
+      "deadline": 1793373485,
+      "edges": [
+        {},
+        {},
+        {}
+      ],
+      "effective_status": "JOINING",
+      "id": 1,
+      "joined": [
+        true,
+        true,
+        false
+      ],
+      "owners": [
+        "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+        "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+        "0x82f7128cf335648c89a0d9509d27c214c285e594"
+      ],
+      "status": "JOINING",
+      "versions": [
+        1,
+        1,
+        1
+      ]
+    },
+    "claim_1_created": {
+      "created_at": 1792768557,
+      "effective_status": "OPEN",
+      "expires_at": 1795360557,
+      "id": 1,
+      "issuer": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+      "offer_sha256": "a54698063f64dadb463853705795c78011e4a4e2795dbfb9196de7c8a81c2562",
+      "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-a.txt",
+      "owner": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+      "reserved_cycle": 0,
+      "status": "OPEN",
+      "transfer_count": 0,
+      "version": 1,
+      "want_sha256": "dfb49d3c8636ce0563a8a23cde45f673fb5d991f8f67787a86b967f8da40a79a",
+      "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-a.txt"
+    },
+    "claim_2_created": {
+      "created_at": 1792768597,
+      "effective_status": "OPEN",
+      "expires_at": 1795360597,
+      "id": 2,
+      "issuer": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+      "offer_sha256": "9a94e9aef4659cf8bdcf18bf6d3c8ec1c70d80c2204c12d784d53a4ee3ab4b07",
+      "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-b.txt",
+      "owner": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+      "reserved_cycle": 0,
+      "status": "OPEN",
+      "transfer_count": 0,
+      "version": 1,
+      "want_sha256": "aeec24762068be6bc1810bae2f5d57a971b652908075fa79b2651ba04190fa99",
+      "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-b.txt"
+    },
+    "claim_3_created": {
+      "created_at": 1792768639,
+      "effective_status": "OPEN",
+      "expires_at": 1795360639,
+      "id": 3,
+      "issuer": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+      "offer_sha256": "d1cdd0df9c80467a7e205650b43d7a76cefa819dd4595a282c9ca59a796a0a82",
+      "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-c.txt",
+      "owner": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+      "reserved_cycle": 0,
+      "status": "OPEN",
+      "transfer_count": 0,
+      "version": 1,
+      "want_sha256": "1a324c65441a20e0aa6272b5e101593a6d7b26f893fbcb7770c3fdd5da192a0a",
+      "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-c.txt"
+    },
+    "negative_edge_0": {
+      "evidence": {
+        "offer": "VERIFIED",
+        "want": "VERIFIED"
+      },
+      "label": "NO_MATCH"
+    },
+    "negative_rejected": {
+      "claims": [
+        {
+          "created_at": 1792769142,
+          "effective_status": "OPEN",
+          "expires_at": 1795361142,
+          "id": 4,
+          "issuer": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "offer_sha256": "3ef95278b93422121ddf258c73e586e4b08bfe0fa73b0d5c88728cf7e2ea4b44",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/injection-offer.txt",
+          "owner": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "reserved_cycle": 0,
+          "status": "OPEN",
+          "transfer_count": 0,
+          "version": 1,
+          "want_sha256": "dfb49d3c8636ce0563a8a23cde45f673fb5d991f8f67787a86b967f8da40a79a",
+          "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-a.txt"
+        },
+        {
+          "created_at": 1792769186,
+          "effective_status": "OPEN",
+          "expires_at": 1795361186,
+          "id": 5,
+          "issuer": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "offer_sha256": "9a94e9aef4659cf8bdcf18bf6d3c8ec1c70d80c2204c12d784d53a4ee3ab4b07",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-b.txt",
+          "owner": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "reserved_cycle": 0,
+          "status": "OPEN",
+          "transfer_count": 0,
+          "version": 1,
+          "want_sha256": "aeec24762068be6bc1810bae2f5d57a971b652908075fa79b2651ba04190fa99",
+          "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-b.txt"
+        },
+        {
+          "created_at": 1792769230,
+          "effective_status": "OPEN",
+          "expires_at": 1795361230,
+          "id": 6,
+          "issuer": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+          "offer_sha256": "d1cdd0df9c80467a7e205650b43d7a76cefa819dd4595a282c9ca59a796a0a82",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-c.txt",
+          "owner": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+          "reserved_cycle": 0,
+          "status": "OPEN",
+          "transfer_count": 0,
+          "version": 1,
+          "want_sha256": "1a324c65441a20e0aa6272b5e101593a6d7b26f893fbcb7770c3fdd5da192a0a",
+          "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-c.txt"
+        }
+      ],
+      "cycle": {
+        "claim_ids": [
+          4,
+          5,
+          6
+        ],
+        "closed_at": 1792769443,
+        "created_at": 1792769269,
+        "deadline": 1793374069,
+        "edges": [
+          {
+            "evidence": {
+              "offer": "VERIFIED",
+              "want": "VERIFIED"
+            },
+            "label": "NO_MATCH"
+          },
+          {},
+          {}
+        ],
+        "effective_status": "REJECTED",
+        "id": 2,
+        "joined": [
+          true,
+          true,
+          true
+        ],
+        "owners": [
+          "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "0x82f7128cf335648c89a0d9509d27c214c285e594"
+        ],
+        "status": "REJECTED",
+        "versions": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "new_owner_set_want": {
+      "created_at": 1792768557,
+      "effective_status": "OPEN",
+      "expires_at": 1795360557,
+      "id": 1,
+      "issuer": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+      "offer_sha256": "a54698063f64dadb463853705795c78011e4a4e2795dbfb9196de7c8a81c2562",
+      "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-a.txt",
+      "owner": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+      "reserved_cycle": 0,
+      "status": "OPEN",
+      "transfer_count": 1,
+      "version": 3,
+      "want_sha256": "1a324c65441a20e0aa6272b5e101593a6d7b26f893fbcb7770c3fdd5da192a0a",
+      "want_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/want-c.txt"
+    },
+    "positive_cleared": {
+      "claims": [
+        {
+          "created_at": 1792768557,
+          "effective_status": "NEEDS_WANT",
+          "expires_at": 1795360557,
+          "id": 1,
+          "issuer": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "offer_sha256": "a54698063f64dadb463853705795c78011e4a4e2795dbfb9196de7c8a81c2562",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-a.txt",
+          "owner": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "reserved_cycle": 0,
+          "status": "NEEDS_WANT",
+          "transfer_count": 1,
+          "version": 2,
+          "want_sha256": "",
+          "want_url": ""
+        },
+        {
+          "created_at": 1792768597,
+          "effective_status": "NEEDS_WANT",
+          "expires_at": 1795360597,
+          "id": 2,
+          "issuer": "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "offer_sha256": "9a94e9aef4659cf8bdcf18bf6d3c8ec1c70d80c2204c12d784d53a4ee3ab4b07",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-b.txt",
+          "owner": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+          "reserved_cycle": 0,
+          "status": "NEEDS_WANT",
+          "transfer_count": 1,
+          "version": 2,
+          "want_sha256": "",
+          "want_url": ""
+        },
+        {
+          "created_at": 1792768639,
+          "effective_status": "NEEDS_WANT",
+          "expires_at": 1795360639,
+          "id": 3,
+          "issuer": "0x82f7128cf335648c89a0d9509d27c214c285e594",
+          "offer_sha256": "d1cdd0df9c80467a7e205650b43d7a76cefa819dd4595a282c9ca59a796a0a82",
+          "offer_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/evidence/demo/offer-c.txt",
+          "owner": "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "reserved_cycle": 0,
+          "status": "NEEDS_WANT",
+          "transfer_count": 1,
+          "version": 2,
+          "want_sha256": "",
+          "want_url": ""
+        }
+      ],
+      "cycle": {
+        "claim_ids": [
+          1,
+          2,
+          3
+        ],
+        "closed_at": 1792769042,
+        "created_at": 1792768685,
+        "deadline": 1793373485,
+        "edges": [
+          {
+            "evidence": {
+              "offer": "VERIFIED",
+              "want": "VERIFIED"
+            },
+            "label": "MATCH"
+          },
+          {
+            "evidence": {
+              "offer": "VERIFIED",
+              "want": "VERIFIED"
+            },
+            "label": "MATCH"
+          },
+          {
+            "evidence": {
+              "offer": "VERIFIED",
+              "want": "VERIFIED"
+            },
+            "label": "MATCH"
+          }
+        ],
+        "effective_status": "CLEARED",
+        "id": 1,
+        "joined": [
+          true,
+          true,
+          true
+        ],
+        "owners": [
+          "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+          "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+          "0x82f7128cf335648c89a0d9509d27c214c285e594"
+        ],
+        "status": "CLEARED",
+        "versions": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "positive_edge_0": {
+      "evidence": {
+        "offer": "VERIFIED",
+        "want": "VERIFIED"
+      },
+      "label": "MATCH"
+    },
+    "positive_edge_1": {
+      "evidence": {
+        "offer": "VERIFIED",
+        "want": "VERIFIED"
+      },
+      "label": "MATCH"
+    },
+    "positive_edge_2": {
+      "evidence": {
+        "offer": "VERIFIED",
+        "want": "VERIFIED"
+      },
+      "label": "MATCH"
+    },
+    "positive_ready": {
+      "claim_ids": [
+        1,
+        2,
+        3
+      ],
+      "closed_at": 0,
+      "created_at": 1792768685,
+      "deadline": 1793373485,
+      "edges": [
+        {},
+        {},
+        {}
+      ],
+      "effective_status": "READY",
+      "id": 1,
+      "joined": [
+        true,
+        true,
+        true
+      ],
+      "owners": [
+        "0x723efc4ee500a90d469aac0ff6052f5395a5f5d1",
+        "0x979191b9dd54ef9d09b43f4157a28aeac5c87ae1",
+        "0x82f7128cf335648c89a0d9509d27c214c285e594"
+      ],
+      "status": "READY",
+      "versions": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "source_blob": "fabddfa458545b1f6f8b553bec97ade0d9eb4304",
+  "source_commit": "9993c5c1e7e8ce3f92f1d5a04971b35e697184fa",
+  "source_sha256": "d201daad4b6fdfed405b52bdaac79d492895ef5c48c097d6b6ba0c2f2315b059",
+  "source_url": "https://raw.githubusercontent.com/Demigodd00/cycle-clear/9993c5c1e7e8ce3f92f1d5a04971b35e697184fa/contracts/CycleClear.py",
+  "source_verified": true,
+  "toolchain": {
+    "genlayer_py": "0.16.3",
+    "genvm_linter": "0.11.0"
+  },
+  "transactions": {
+    "deploy": {
+      "expected_success": true,
+      "hash": "0x5fdac13986a9423861527e5061e8d154ce2762850b90c6036d99ce0f401d29c8",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "expected_failure_duplicate_join": {
+      "expected_success": false,
+      "hash": "0x020393ab443697ac11ee1b720f1a90a3d1d6c38304d6b038c143b33140e42df5",
+      "label": "EXPECTED FAILURE: a claim owner cannot join the same cycle twice",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "ERROR",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_create_4": {
+      "expected_success": true,
+      "hash": "0xc5398bc58638587965365e1112ebcfc7c72fbf94ee5e3c1b079e00fd3cf765ca",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_create_5": {
+      "expected_success": true,
+      "hash": "0x178af8e677baece784d4ee4d52c2fe90bb043faea001b9d57de00fc03ddc1a33",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_create_6": {
+      "expected_success": true,
+      "hash": "0x951c95a196463429896e0503dd1258f91db46ecf6cbf08b5bed7a264345e0683",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_edge_0": {
+      "expected_success": true,
+      "hash": "0x7a4eed972f4e804290420896c11f5dcb9da1012f2cce734d2d98b9132e20b566",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_finalize": {
+      "expected_success": true,
+      "hash": "0x20df917266ea7945e9c7a9639b32a20a01412008f5d557d23a8931647be86def",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_join_b": {
+      "expected_success": true,
+      "hash": "0x7ebda83d73cdb73700a5612726ae39bc10641470a11d4eb31529a65cfc8e648e",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_join_c": {
+      "expected_success": true,
+      "hash": "0x1733d71bba2b180966104df8ae3f4e97745bc75374bd0ed6e118746c9cacf3a4",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "negative_propose": {
+      "expected_success": true,
+      "hash": "0x1a2dfdc9e9202f6b88808364e9fc044fdcf32abd77d72ba3e7b96626765741d7",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "new_owner_set_want": {
+      "expected_success": true,
+      "hash": "0xa634411278db86def873cf414f14b90fe879fd7674eafbd3af780dc94356008e",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_create_1": {
+      "expected_success": true,
+      "hash": "0xb00f186114598f9eaea1ff95a41c8f42fe4ffe2b025addaf2d814fc1af3b9755",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_create_2": {
+      "expected_success": true,
+      "hash": "0x24b4fdfd2b18e828cafd1e9a363ea95a27eeb0087f574dcc568adb68077a39f3",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_create_3": {
+      "expected_success": true,
+      "hash": "0x3f6252f52560d78de5c1635d32313dddd7d810a3d9224b36d3f610d277d755c3",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_edge_0": {
+      "expected_success": true,
+      "hash": "0x653cbda888d7c89d3d5307d9783363ec155f36fcabb28eb08f112acdd4f9d5ac",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_edge_1": {
+      "expected_success": true,
+      "hash": "0x9424864ff35e1eede0895e8aaffa2bdfd3d58d1c9c6e66c300f7f59168026b5b",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 1,
+          "total": 5
+        }
+      }
+    },
+    "positive_edge_2": {
+      "expected_success": true,
+      "hash": "0x20b35041d89e9a7f61a037b98457d4f603da84dc03c3bccfbdfe47c5af1b5dd2",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_finalize": {
+      "expected_success": true,
+      "hash": "0xb7c3b8cd5391f9c4cb4551b1ca658e3b61e9b40c377a17c30b6842cfd2bb4597",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_join_b": {
+      "expected_success": true,
+      "hash": "0x37d5b6a352ccd3685dce17dd31bf7538a57b6c0b3179bf4408a030a181cd3193",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_join_c": {
+      "expected_success": true,
+      "hash": "0x38b5863d2cae7380ba06efead6b9d88723c1dfeb71545765f68b95364508601f",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 5,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    },
+    "positive_propose": {
+      "expected_success": true,
+      "hash": "0xf1bea8e3d3c0b6c91d2e7131778c9a3e1a630429346a13e64e0b18c5a4e9025b",
+      "receipt": {
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "status": "FINALIZED",
+        "votes": {
+          "agree": 3,
+          "disagree": 0,
+          "total": 5
+        }
+      }
+    }
+  }
+}

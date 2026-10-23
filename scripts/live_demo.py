@@ -176,12 +176,12 @@ def fresh_commit() -> str:
     return commit
 
 
-def public_evidence(commit: str, path: str) -> dict:
+def public_evidence(commit: str, path: str, max_bytes: int | None = 4000) -> dict:
     expected = git("show", "HEAD:" + path)
     url = BASE + commit + "/" + path
     with urllib.request.urlopen(url, timeout=30) as response:
-        actual = response.read(4001)
-    if actual != expected or len(actual) > 4000:
+        actual = response.read(max_bytes + 1) if max_bytes is not None else response.read()
+    if actual != expected or (max_bytes is not None and len(actual) > max_bytes):
         raise RuntimeError("public evidence mismatches Git blob or exceeds cap: " + path)
     return {"url": url, "sha256": hashlib.sha256(expected).hexdigest(), "bytes": len(expected)}
 
@@ -234,7 +234,7 @@ def demo() -> None:
     if (ROOT / "contracts" / "CycleClear.py").read_bytes() != source_bytes:
         raise RuntimeError("working contract bytes differ from Git blob")
     evidence = {path: public_evidence(commit, path) for path in PATHS}
-    public_evidence(commit, "contracts/CycleClear.py")
+    public_evidence(commit, "contracts/CycleClear.py", max_bytes=None)
     accounts = account_keys()
     client = create_client(chain=studionet, account=accounts[0])
     state = load(PROGRESS)

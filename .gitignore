@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 .env
+.private/
+deploy/progress.json
+deploy/probe-progress.json

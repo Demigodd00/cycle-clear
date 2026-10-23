@@ -1,0 +1,1 @@
+This CycleClear claim record describes a transferable entitlement to a JSON dataset with exactly 12 public-domain tree species entries. The described dataset may be reused without attribution. This is a synthetic on-chain claim description, not proof that a JSON file was delivered.

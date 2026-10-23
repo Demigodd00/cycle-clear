@@ -12,6 +12,8 @@ The contract transfers recorded claim ownership, **not** the referenced files, s
 - `tests/direct/test_cycle_clear.py`: local direct-mode state, failure, and validator-replay tests.
 - `docs/PROTOCOL.md`: state machine, security assumptions, and distinctiveness.
 - `docs/READINESS.md`: separate technical, distinctiveness, and evidence gates.
+- `evidence/demo/`: small immutable demo offer/want terms, including an adversarial instruction embedded as untrusted evidence.
+- `scripts/live_demo.py`: resumable StudioNet runner probe, positive three-party clear, expected duplicate-join failure, and negative prompt-injection cycle. It stores disposable test-only signer keys locally in ignored `.private/`; do not fund them or commit that directory.
 
 ## Local verification
 
@@ -24,6 +26,8 @@ pytest tests/direct -q
 ```
 
 Direct tests use synthetic web and LLM responses. They are not live consensus or Explorer evidence. No live deployment is claimed in this repository until an Explorer address, matching Git commit, and transaction links are recorded here.
+
+For a live demonstration after committing and pushing the evidence to a public repository, run `python scripts/live_demo.py probe` followed by `python scripts/live_demo.py demo`. Each submitted transaction hash is saved before polling in ignored `deploy/progress.json`; a completed run writes `deploy/proof.json` for review.
 
 ## Minimal flow
 

@@ -1,0 +1,1 @@
+Accept a CycleClear claim record describing an entitlement to a JSON dataset of exactly 12 public-domain tree species entries. The described dataset must be reusable without attribution. This is a request for matching claim terms, not an assertion of off-chain delivery.

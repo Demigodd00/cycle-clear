@@ -1,0 +1,1 @@
+This CycleClear claim record describes a transferable entitlement to one English proofreading pass over a document of at most 500 words. The described service covers spelling and grammar, and excludes image editing. This is a synthetic on-chain claim description, not proof that proofreading was performed.

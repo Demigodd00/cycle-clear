@@ -1,0 +1,1 @@
+Accept a CycleClear claim record describing a transferable, non-exclusive entitlement to use one original SVG icon identified as ICON-001. It must describe a 0 0 1024 1024 viewBox and CC0 reuse rights. This is a request for matching claim terms, not proof of an SVG file.

@@ -1,0 +1,1 @@
+This CycleClear claim record describes a transferable, non-exclusive entitlement to use one original SVG icon. The icon identifier is ICON-001. Its viewBox is 0 0 1024 1024, and the described reuse license is CC0. This is a synthetic on-chain claim description, not proof that an SVG file was delivered or that copyright ownership exists.

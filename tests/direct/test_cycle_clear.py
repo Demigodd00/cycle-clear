@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib
 import json
 import sys
+import pytest
 
 
 CONTRACT = Path(__file__).resolve().parents[2] / "contracts" / "CycleClear.py"
@@ -248,3 +249,67 @@ def test_unjoined_or_wrong_owner_cannot_cancel_or_retire(direct_vm, direct_deplo
     direct_vm.sender = direct_charlie
     with direct_vm.expect_revert("joined_participant_required"):
         contract.cancel_cycle(number)
+
+
+@pytest.mark.parametrize(
+    ("response", "expected"),
+    [
+        ({"status": 404, "body": "not found"}, "HTTP_ERROR"),
+        ({"status": 200, "body": ""}, "EMPTY"),
+        ({"status": 200, "body": "x" * 4001}, "OVERSIZED"),
+        ({"status": 200, "body": b"\xff"}, "HASH_MISMATCH"),
+    ],
+)
+def test_bad_evidence_never_matches(
+    direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie, response, expected
+):
+    contract = setup(direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie)
+    number = ready(direct_vm, contract, direct_alice, direct_bob, direct_charlie)
+    direct_vm.clear_mocks()
+    direct_vm.mock_web(ROOT + "offer-0.txt", response)
+    direct_vm.mock_web(ROOT + "want-1.txt", {"status": 200, "body": WANTS[1]})
+    judge(direct_vm)
+    contract.assess_edge(number, 0)
+    finding = cycle(contract, number)["edges"][0]
+    assert finding["label"] == "UNCLEAR"
+    assert finding["evidence"]["offer"] == expected
+    contract.finalize_cycle(number)
+    assert cycle(contract, number)["status"] == "REJECTED"
+
+
+def test_edge_cannot_be_reassessed_or_finalized_twice(
+    direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie
+):
+    contract = setup(direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie)
+    number = ready(direct_vm, contract, direct_alice, direct_bob, direct_charlie)
+    judge(direct_vm)
+    for edge in (0, 1, 2):
+        contract.assess_edge(number, edge)
+    with direct_vm.expect_revert("edge_already_assessed"):
+        contract.assess_edge(number, 0)
+    contract.finalize_cycle(number)
+    with direct_vm.expect_revert("cycle_closed"):
+        contract.finalize_cycle(number)
+
+
+def test_invalid_utf8_fails_closed_after_correct_hash(
+    direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie
+):
+    contract = setup(direct_vm, direct_deploy, direct_alice, direct_bob, direct_charlie)
+    direct_vm.sender = direct_alice
+    bad_url = ROOT + "invalid-utf8.bin"
+    contract.create_claim(bad_url, hashlib.sha256(b"\xff").hexdigest(),
+                          ROOT + "want-0.txt", sha(WANTS[0]), 86400)
+    number = contract.propose_cycle(4, 2, 3, 3600)
+    direct_vm.sender = direct_bob
+    contract.join_cycle(number)
+    direct_vm.sender = direct_charlie
+    contract.join_cycle(number)
+    direct_vm.clear_mocks()
+    direct_vm.mock_web(bad_url, {"status": 200, "body": b"\xff"})
+    direct_vm.mock_web(ROOT + "want-1.txt", {"status": 200, "body": WANTS[1]})
+    judge(direct_vm)
+    contract.assess_edge(number, 0)
+    assert cycle(contract, number)["edges"][0] == {
+        "label": "UNCLEAR", "evidence": {"offer": "INVALID_UTF8", "want": "VERIFIED"}
+    }
